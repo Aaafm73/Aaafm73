@@ -1,0 +1,438 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    background: #0080ff;
+    top: 0;
+    width: 100%;
+    box-shadow: 2px 2px 3px rgb(1, 1, 0);
+}
+
+.logo {
+    font-size: 14pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding-left: 3rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    display: none;
+    color: white;
+    font-size: 14pt;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.menu {
+    margin: o;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li{
+    padding-left: 0;
+    margin-right: 10px;
+}
+
+.menu li a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .navbar {
+        width: 95%;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .menu.aktif {
+        animation: normal;
+        transition: 0.3s;
+        display:inline-block;
+        position:fixed;
+        top: 56px;
+        background: #0080ff;
+        padding: 10px 20px;
+        right: 0;
+        left: 0;
+        opacity: 70%;
+        width: 50%;
+    }
+    
+    .menu.aktif li a{
+        padding: 10px;
+        display: inline-block !important;
+    }
+
+    .btn {
+        display: block;
+    }
+}
+
+/* hero section */
+
+.beranda {
+    display: flex;
+    margin: 0;
+    background-color: #5badff;
+    padding-top: 5rem;
+}
+
+.content-home {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.look {
+    display: flex;
+}
+
+.look li {
+    list-style: none;
+    padding: 20px;
+    margin: 10px;   
+}
+
+.look li img{
+    width: 350px;
+    padding-right: 0;
+    margin-left: 5px;
+}
+
+.look li h1{
+    padding-left: 0;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.look li p{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 36pt;
+    right: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .beranda {
+        width: 100%;
+    }
+
+    .look {
+        display: flex;
+    }
+    
+    .look li {
+        list-style: none;
+        padding: 0;
+        margin: 0;   
+    }
+    
+    .look li img{
+        width: 160px;
+        padding-right: 0;
+        margin-left: 5px;
+    }
+    
+    .look li h1{
+        padding-left: 0;
+        margin-right: 10px;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .look li p{
+        display: none;
+    }
+    
+}
+
+/* profile */
+.bio {
+    margin: 0;
+    padding: 0;
+    padding-top: 5rem;
+}
+
+.contain {
+    display: flex;
+    margin: 0; 
+    justify-content: center;   
+}
+
+.about {
+    display: inline;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about li img{
+    width: 130px;
+    border-radius: 100%;
+}
+
+.about li p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    display: inline-block;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.skill {
+    justify-content: space-between;
+    align-items: center;
+    display: inline;
+    list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+        .bio {
+            width: 100%;
+        }
+
+        .contain {
+        display: flex;
+        margin: 0; 
+        justify-content: center;   
+        }
+
+        .about {
+        display: inline;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        .about li img{
+        width: 130px;
+        border-radius: 100%;
+        }
+
+        .about li p{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        display: inline-block;
+        padding-left: 5px;
+        padding-right: 20px;
+        }
+
+        .skill {
+        justify-content: space-between;
+        align-items: center;
+        display: inline;
+        list-style: none;
+        }
+    
+}
+
+/* work */
+.proyek {
+    background: #5badff;
+    margin: 0;
+    padding: 0;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tampilan {
+    justify-content: space-between;
+    align-items: center;
+    display: inline;
+    list-style: none;
+    padding-left: 100px;
+    color: #fff;
+}
+
+.pict {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.gmbr {
+    padding-right: 80px;
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    width: 600px;
+}
+
+@media screen and (max-width: 768px) {
+    .proyek {
+        width: 100%;
+    }
+
+    .project {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tampilan {
+        justify-content: space-between;
+        align-items: center;
+        display: inline;
+        list-style: none;
+        padding-left: 20px;
+        color: #fff;
+    }
+
+    .pict {
+        width: 80px;
+        border-radius: 10px;
+    }
+
+    .gmbr {
+        margin-left: 20px;
+        padding: 5px;
+        margin: 5px;
+        display: block;
+        width: 240px;
+    }
+
+    
+}
+
+/* contacts */
+.kontak {
+    margin: 0;
+    padding: 0;
+    padding-top: 5rem;
+}
+
+.project1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.tampilkan {
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 100px;
+    color: #000000;
+
+    top: 80px;
+}
+
+.sosmed {
+    width: 40px;
+    border-radius: 100%;
+}
+
+.gmbr1 {
+    padding-right: 80px;
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    width: 500px;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+.wavecontact {
+    padding-bottom: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+        .kontak {
+            width: 100%;
+        }
+
+        .project1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .tampilkan {
+        justify-content: space-between;
+        list-style: none;
+        padding-left: 30px;
+        color: #000000;
+
+        top: 80px;
+    }
+
+    .sosmed {
+        width: 40px;
+        border-radius: 100%;
+    }
+
+    .gmbr1 {
+        padding-right: 80px;
+        padding: 10px;
+        margin: 10px;
+        display: block;
+        width: 230px;
+    }
+
+    section {
+        padding-top: 5rem;
+    }
+
+    .wavecontact {
+        padding-bottom: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+}
+
+/* footer */
+.footer {
+    background-color: #0080ff;
+    display: flex;
+    padding-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        display:contents;
+    }
+    
+}
